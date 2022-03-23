@@ -1,0 +1,260 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #000000;
+}
+::selection{
+    background-color: #3330fa;
+    color: #FFFFFF;
+}
+/*==nav==*/
+.navigation{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 200;
+    background-image: linear-gradient(180deg, #000, rgba(0,0,0,0.8));
+}
+.logo-container{
+    max-width: 950px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo{
+    color: #FFFFFF;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-family: Dancing Script;
+}
+
+#main{
+    max-width: 950px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 90px auto 20px auto;
+    border-bottom: 1px solid rgba(15,15,15);
+    padding-bottom: 60px;
+}
+.main-img{
+    max-width: 350px;
+    max-height: 700px;
+    width: 100%;
+}
+.main-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.main-text{
+    max-width: 400px;
+    position: relative;
+}
+.main-text::before{
+    content: 'Hu Tao';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -30px;
+    font-size: 7rem;
+    color: #296dff28;
+    line-height: 7rem;
+    font-weight: 700;
+    z-index: -1;
+}
+.main-text strong{
+    color: #FFFFFF;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 1.65rem;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: flex-start;
+}
+.main-text h1{
+    color: #FFFFFF;
+    font-size: 5rem;
+    line-height: 4rem;
+    letter-spacing: 1px;
+}
+.main-text h1 span{
+    color: #689af8;
+}
+.main-text p{
+    color: #999999;
+    margin: 30px 0px;
+    letter-spacing: 1px;
+    font-size: 1rem;
+}.main-text a,
+.summery-heading a{
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 6px;
+    font-size: 0.8rem;
+    border-bottom: 1px solid #689af8;
+    padding: 10px 10px 10px 0px;
+    transition: all 508ms cubic-bezier(0.77,0,0.175,1);
+}
+.main-text a:hover,
+.summery-heading a:hover{
+    padding: 10px;
+    background-color: rgba(104,154,248,0.1);
+}
+#summery{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 950px;
+    width: 100%;
+    margin: 80px auto 0px auto;
+}
+.summery-heading{
+    max-width: 400px;
+    width: 100%;
+}
+.summery-heading strong{
+    color: #689af8;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+}
+.summery-heading h2{
+    color: #FFFFFF;
+    font-size: 2.37rem;
+    line-height: 2.9rem;
+    margin: 20px 0px;
+
+
+}
+.summery-details{
+    max-width: 470px;
+    width: 100%;
+    border: 1px solid rgba(15,15,15);
+    padding: 20px;
+}
+.summery-details p{
+    color: #999999;
+    font-size: 1rem;
+}
+#game{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    max-width: 950px;
+    width: 100%;
+    margin: 80px auto 50px auto;
+    padding-bottom: 80px;
+    border-bottom: 1px solid rgba(15,15,15);
+}
+.game-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.game-box h3{
+    font-size: 1.3rem;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+}
+.game-box h3 span{
+    color: #689af8;
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 1.3rem;
+    user-select: none;
+}
+.game-box ul{
+    display: flex;
+    background-color: #050505;
+    padding: 10px 20px;
+    border: 1px solid rgba(39,39,39,0.4);
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+.game-box ul li{
+    color: #dadada;
+    margin-right: 20px;
+    margin-top: 4px;
+}
+#proces{
+    width: 100%;
+    max-width: 950px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(15,15,15);
+}
+.proces-heading{
+    width: 100%;
+}
+.proces-heading h3{
+    font-size: 3rem;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+}
+.proces-heading h3 span{
+    color: #689af8;
+    font-size: 1.7rem;
+}
+.proces-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+}
+.proces-box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+.proces-box strong{
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+.proces-box ul{
+    margin-top: 20px;
+}
+.proces-box ul li{
+    color: #FFFFFF;
+    font-size: 1.12rem;
+    margin: 8px 0px;
+}
+.proces-box span{
+    color: #296dff28;
+    position: absolute;
+    left: -30px;
+    top: -30px;
+    font-weight: 700;
+    font-size: 4rem;
+    z-index: 1;
+}
